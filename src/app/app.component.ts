@@ -78,6 +78,67 @@ export class AppComponent {
             }
         ]
     },
+    asia: {
+      title: "Asian Market Analysis",
+      subtitle: "Focus on South Korean Economic Developments",
+      sections: [
+          {
+              title: "Political Factors",
+              items: [
+                  {
+                      title: "Technology Industry Reform",
+                      content: "South Korea passed the 'Chips Act' providing $260 billion in semiconductor industry support through 2027. Samsung and SK Hynix received tax credits worth 15% of facility investments. Government aims to secure 10% global AI chip market share by 2030.",
+                      stats: {
+                          investment: 260,
+                          taxCredit: "15%",
+                          marketShareTarget: "10%"
+                      }
+                  },
+                  {
+                      title: "Corporate Governance Changes",
+                      content: "New regulations require 40% independent board members for large conglomerates. 72% of top 50 chaebols have restructured leadership. Corporate transparency index improved from 68 to 75 (2022-2023).",
+                      stats: {
+                          independentDirectors: "40%",
+                          chaebolCompliance: "72%",
+                          transparencyScore: 75
+                      }
+                  }
+              ]
+          },
+          {
+              title: "Economic Factors",
+              items: [
+                  {
+                      title: "Digital Currency Initiative",
+                      content: "Bank of Korea launched CBDC pilot with 100,000 participants. Digital won tested for offline payments and cross-border transactions. 83% of merchants in test regions adopted the system.",
+                      stats: {
+                          participants: 100000,
+                          merchantAdoption: "83%",
+                          transactionVolume: "5.2B"
+                      }
+                  },
+                  {
+                      title: "Green Energy Transition",
+                      content: "Renewable energy investment reached $30.2 billion in 2023. Offshore wind capacity increased by 165%. Government mandated 40% renewable energy use for industrial complexes by 2025.",
+                      stats: {
+                          investment: 30.2,
+                          windCapacityGrowth: "165%",
+                          renewableTarget: "40%"
+                      }
+                  },
+                  {
+                      title: "Aging Population Impact",
+                      content: "Pension system reform introduced as population over 65 reaches 17.8%. Healthcare spending projected to increase by 42% by 2030. Workforce shrinking by 2.1% annually.",
+                      stats: {
+                          elderlyPopulation: "17.8%",
+                          healthcareIncrease: "42%",
+                          workforceDecline: "2.1%"
+                      }
+                  }
+              ]
+          }
+      ]
+  },
     africa: {
         title: "African Market Analysis",
         subtitle: "Focus on Botswana's Economic Development",
