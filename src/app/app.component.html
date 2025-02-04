@@ -1,0 +1,135 @@
+<nav class="bg-blue-900 text-white fixed w-full z-50">
+  <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+          <div class="text-xl font-bold">Global Business Insights</div>
+          <div class="hidden md:flex space-x-6">
+              <a href="#regions" class="nav-link hover:text-blue-200">Regions</a>
+          </div>
+          <button class="md:hidden" (click)="toggleMobileMenu()">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+              </svg>
+          </button>
+      </div>
+  </div>
+</nav>
+
+<div id="mobileMenu" class="hidden fixed w-full bg-blue-900 text-white z-40 top-16">
+  <div class="container mx-auto px-4 py-4">
+      <div class="flex flex-col space-y-4">
+          <a href="#regions" class="hover:text-blue-200">Regions</a>
+      </div>
+  </div>
+</div>
+
+<header class="pt-40 pb-28 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
+  <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">International Business Analysis</h1>
+          <p class="text-xl md:text-2xl mb-8">Comprehensive insights into global markets and regional developments</p>
+      </div>
+  </div>
+</header>
+
+<section class="py-12 bg-white">
+  <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="stat-card bg-blue-50 rounded-lg p-6 text-center">
+              <h3 class="text-3xl font-bold text-blue-900 mb-2">5</h3>
+              <p class="text-gray-600">Regions Analyzed</p>
+          </div>
+          <div class="stat-card bg-blue-50 rounded-lg p-6 text-center">
+              <h3 class="text-3xl font-bold text-blue-900 mb-2">30+</h3>
+              <p class="text-gray-600">Economic Indicators</p>
+          </div>
+          <div class="stat-card bg-blue-50 rounded-lg p-6 text-center">
+              <h3 class="text-3xl font-bold text-blue-900 mb-2">200+</h3>
+              <p class="text-gray-600">Data Points</p>
+          </div>
+          <div class="stat-card bg-blue-50 rounded-lg p-6 text-center">
+              <h3 class="text-3xl font-bold text-blue-900 mb-2">2024</h3>
+              <p class="text-gray-600">Latest Updates</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="regions" class="py-16">
+  <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">Regional Analysis</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+          <div class="region-card bg-white rounded-lg shadow-lg overflow-hidden" (click)="showRegion('europe')">
+              <img src="https://mapofeurope.com/wp-content/uploads/2019/12/europe-map-2020.jpg" alt="Europe" class="w-full h-48 object-cover">
+              <div class="p-6">
+                  <h3 class="text-xl font-bold text-blue-900 mb-2">Europe</h3>
+                  <p class="text-gray-600 mb-4">Comprehensive analysis of European markets with focus on Norway</p>
+                  <div class="flex justify-between items-center">
+                      <span class="text-sm text-blue-600">View Details →</span>
+                      <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Updated</span>
+                  </div>
+              </div>
+          </div>
+
+          <div class="region-card bg-white rounded-lg shadow-lg overflow-hidden" (click)="showRegion('africa')">
+              <img src="https://www.ducksters.com/geography/flagmaps/africa_2.jpg" alt="Africa" class="w-full h-48 object-cover">
+              <div class="p-6">
+                  <h3 class="text-xl font-bold text-blue-900 mb-2">Africa</h3>
+                  <p class="text-gray-600 mb-4">In-depth insights into African markets with focus on Botswana</p>
+                  <div class="flex justify-between items-center">
+                      <span class="text-sm text-blue-600">View Details →</span>
+                      <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Updated</span>
+                  </div>
+              </div>
+          </div>
+
+          <div class="region-card bg-white rounded-lg shadow-lg overflow-hidden" (click)="showRegion('asia')">
+              <img src="https://www.worldatlas.com/upload/28/cb/60/shutterstock-1691529337.jpg" alt="Asia" class="w-full h-48 object-cover">
+              <div class="p-6">
+                  <h3 class="text-xl font-bold text-blue-900 mb-2">Asia</h3>
+                  <p class="text-gray-600 mb-4">Strategic overview of Asian market developments</p>
+                  <div class="flex justify-between items-center">
+                      <span class="text-sm text-blue-600">View Details →</span>
+                      <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Updated</span>
+                  </div>
+              </div>
+          </div>
+
+          <div class="region-card bg-white rounded-lg shadow-lg overflow-hidden" (click)="showRegion('us')">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Map_of_USA_with_state_and_territory_names_2.png" alt="United States" class="w-full h-48 object-cover">
+              <div class="p-6">
+                  <h3 class="text-xl font-bold text-blue-900 mb-2">United States</h3>
+                  <p class="text-gray-600 mb-4">Detailed analysis of US market trends and policies</p>
+                  <div class="flex justify-between items-center">
+                      <span class="text-sm text-blue-600">View Details →</span>
+                      <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Updated</span>
+                  </div>
+              </div>
+          </div>
+
+          <div class="region-card bg-white rounded-lg shadow-lg overflow-hidden" (click)="showRegion('mexico')">
+              <img src="https://cdn.britannica.com/74/2574-050-C1EDBDAD/Mexico-map-boundaries-cities-locator.jpg" alt="Mexico" class="w-full h-48 object-cover">
+              <div class="p-6">
+                  <h3 class="text-xl font-bold text-blue-900 mb-2">Mexico</h3>
+                  <p class="text-gray-600 mb-4">Comprehensive overview of Mexican market opportunities</p>
+                  <div class="flex justify-between items-center">
+                      <span class="text-sm text-blue-600">View Details →</span>
+                      <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Updated</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="regionContent" class="py-16 bg-gray-50 hidden">
+  <div class="container mx-auto px-4">
+      <div id="contentContainer">
+      </div>
+  </div>
+</section>
+
+<footer class="bg-blue-900 text-white py-12">
+      <div class="border-t border-blue-800 mt-8 pt-8 text-center">
+          <p class="text-blue-200">© 2024 International Business Analysis. All rights reserved.</p>
+      </div>
+</footer>
