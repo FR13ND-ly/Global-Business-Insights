@@ -347,8 +347,51 @@ usa: {
                     stats: { strategyRevision: "89%", partnershipGrowth: "167%", investmentHorizon: 2.8 }
                 }
             ]
-        }
-    ]
+        },
+    ],
+    conclusion: {
+      title: "Strategic Implications and Future Outlook",
+      summary: "The analysis of AI as a technological-resource factor in the USA business environment reveals transformative impacts across multiple dimensions of the economy. The evidence demonstrates that AI has become a fundamental driver of competitive advantage and economic growth, while simultaneously presenting significant challenges for adaptation and resource allocation.",
+      keyFindings: [
+          {
+              title: "Economic Integration",
+              content: "AI technologies have achieved critical mass in the US economy, contributing $1.1 trillion to GDP and transforming 78% of Fortune 500 companies. This integration has catalyzed a 15.4% increase in productivity across adopting organizations.",
+              implication: "The technology has moved beyond experimental status to become a core driver of business performance and economic growth."
+          },
+          {
+              title: "Workforce Transformation",
+              content: "With 12.3 million jobs affected and 2.1 million new positions created, AI is fundamentally reshaping the labor market. The 45% skills gap indicates a critical need for workforce development.",
+              implication: "Organizations must prioritize human capital development and strategic workforce planning to remain competitive."
+          },
+          {
+              title: "Market Structure Evolution",
+              content: "The 34% increase in market concentration among AI services providers, coupled with 156% growth in new startups, indicates a dynamic but increasingly consolidated market structure.",
+              implication: "Companies must carefully consider their positioning and partnerships in the evolving AI ecosystem."
+          }
+      ],
+      recommendations: [
+          {
+              area: "Strategic Planning",
+              content: "Organizations should develop comprehensive AI integration strategies that align with their core competencies and market positioning.",
+              priority: "High"
+          },
+          {
+              area: "Resource Allocation",
+              content: "Increase investment in AI infrastructure and talent development, with particular focus on addressing the 45% skills gap.",
+              priority: "High"
+          },
+          {
+              area: "Risk Management",
+              content: "Develop robust frameworks for managing AI-related risks, including data security, algorithmic bias, and regulatory compliance.",
+              priority: "Medium"
+          }
+      ],
+      futureOutlook: {
+          shortTerm: "The immediate future (1-2 years) will be characterized by accelerated AI adoption across industries, with particular growth in edge computing and specialized AI solutions.",
+          mediumTerm: "Over the next 3-5 years, expect significant restructuring of industry value chains and emergence of new business models built around AI capabilities.",
+          longTerm: "The long-term horizon (5+ years) suggests fundamental changes in competitive dynamics, with AI proficiency becoming a primary determinant of business success."
+      }
+  }
 },
 mexico: {
   title: "Mexican Market Analysis",
@@ -571,6 +614,74 @@ showRegion(region: any) {
           </section>
       `;
   });
+  if (content.conclusion) {
+    html += `
+        <section class="bg-white rounded-xl shadow-lg overflow-hidden mt-8">
+            <div class="px-6 py-4 bg-blue-50 border-b border-blue-200">
+                <h3 class="text-xl font-semibold text-gray-900">${content.conclusion.title}</h3>
+            </div>
+            <div class="p-6">
+                <!-- Summary -->
+                <div class="mb-8">
+                    <p class="text-gray-700 leading-relaxed">${content.conclusion.summary}</p>
+                </div>
+
+                <!-- Key Findings -->
+                <div class="mb-8">
+                    <h4 class="text-lg font-semibold text-gray-900 mb-4">Key Findings</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        ${content.conclusion.keyFindings.map((finding: any) => `
+                            <div class="bg-gray-50 rounded-lg p-5">
+                                <h5 class="font-semibold text-gray-900 mb-2">${finding.title}</h5>
+                                <p class="text-gray-600 mb-3">${finding.content}</p>
+                                <p class="text-gray-700 italic">${finding.implication}</p>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+
+                <!-- Recommendations -->
+                <div class="mb-8">
+                    <h4 class="text-lg font-semibold text-gray-900 mb-4">Recommendations</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        ${content.conclusion.recommendations.map((rec: any) => `
+                            <div class="bg-gray-50 rounded-lg p-5">
+                                <div class="flex justify-between items-center mb-2">
+                                    <h5 class="font-semibold text-gray-900">${rec.area}</h5>
+                                    <span class="px-3 py-1 rounded text-sm ${
+                                        rec.priority === 'High' ? 'bg-red-100 text-red-800' :
+                                        rec.priority === 'Medium' ? 'bg-yellow-100 text-yellow-800' :
+                                        'bg-green-100 text-green-800'
+                                    }">${rec.priority}</span>
+                                </div>
+                                <p class="text-gray-600">${rec.content}</p>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+
+                <!-- Future Outlook -->
+                <div>
+                    <h4 class="text-lg font-semibold text-gray-900 mb-4">Future Outlook</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-gray-50 rounded-lg p-5">
+                            <h5 class="font-semibold text-gray-900 mb-2">Short Term (1-2 Years)</h5>
+                            <p class="text-gray-600">${content.conclusion.futureOutlook.shortTerm}</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-5">
+                            <h5 class="font-semibold text-gray-900 mb-2">Medium Term (3-5 Years)</h5>
+                            <p class="text-gray-600">${content.conclusion.futureOutlook.mediumTerm}</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-5">
+                            <h5 class="font-semibold text-gray-900 mb-2">Long Term (5+ Years)</h5>
+                            <p class="text-gray-600">${content.conclusion.futureOutlook.longTerm}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    `;
+}
   
   html += `
           </div>
