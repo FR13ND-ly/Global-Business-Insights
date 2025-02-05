@@ -275,220 +275,80 @@ export class AppComponent {
     ]
 },
 usa: {
-  title: "United States Market Analysis",
-  subtitle: "Comprehensive Market Trends Analysis 2021-2024",
-  sections: [
-      {
-          title: "Political Factors",
-          items: [
-              {
-                  title: "Electoral System Changes",
-                  content: "Implementation of new voting laws in 27 states (2021-2023). Mail-in voting increased by 43% in 2022 midterms. Voter turnout reached 66.8% in 2020 presidential election.",
-                  stats: { statesWithNewLaws: 27, mailInVotingIncrease: "43%", voterTurnout: "66.8%" }
-              },
-              {
-                  title: "Federal Spending Patterns",
-                  content: "Infrastructure Investment and Jobs Act allocated $1.2 trillion over 8 years. Defense budget increased to $886 billion for FY2024. Federal deficit projected at $1.6 trillion.",
-                  stats: { infrastructureBudget: 1200000000000, defenseBudget: 886000000000, federalDeficit: 1600000000000 }
-              },
-              {
-                  title: "State-Federal Relations",
-                  content: "37 states filed lawsuits against federal government (2022-2023). Interstate compacts increased by 22%, with 47 states participating in cross-border agreements.",
-                  stats: { stateLawsuits: 37, compactIncrease: "22%", participatingStates: 47 }
-              },
-              {
-                  title: "Campaign Finance Reform",
-                  content: "Small-dollar donations increased by 56%. Corporate PAC contributions decreased by 23%. Average campaign cost increased to $21.3 million per Senate race.",
-                  stats: { smallDonationIncrease: "56%", pacDecrease: "23%", averageCampaignCost: 21300000 }
-              },
-              {
-                  title: "Legislative Productivity",
-                  content: "Congress passed 352 bills in 2023. Bipartisan support achieved on 42% of legislation. Committee hearings increased by 28%.",
-                  stats: { billsPassed: 352, bipartisanSupport: "42%", hearingIncrease: "28%" }
-              },
-              {
-                  title: "International Relations",
-                  content: "New trade agreements with 5 nations. Foreign aid budget increased by 12%. Diplomatic missions expanded in 15 countries.",
-                  stats: { newTradeAgreements: 5, foreignAidIncrease: "12%", diplomaticExpansion: 15 }
-              }
-          ]
-      },
-      {
-          title: "Economic Factors",
-          items: [
-              {
-                  title: "GDP Growth and Composition",
-                  content: "GDP reached $25.5 trillion. Services sector contributes 77.6%. Manufacturing sector grew by 3.2% annually since 2021.",
-                  stats: { gdpTotal: 25500000000000, servicesShare: "77.6%", manufacturingGrowth: "3.2%" }
-              },
-              {
-                  title: "Labor Market Dynamics",
-                  content: "Employment rate at 96.2%. Remote work adoption at 32.6%. Gig economy workers increased to 57.3 million.",
-                  stats: { employmentRate: "96.2%", remoteWork: "32.6%", gigWorkers: 57300000 }
-              },
-              {
-                  title: "Monetary Policy",
-                  content: "Federal funds rate at 5.25%. Inflation rate decreased to 3.1%. M2 money supply grew by 2.8%.",
-                  stats: { fedRate: "5.25%", inflationRate: "3.1%", m2Growth: "2.8%" }
-              },
-              {
-                  title: "International Trade",
-                  content: "Trade deficit at $592 billion. Exports increased by 7.8%. China trade relationship valued at $690.6 billion.",
-                  stats: { tradeDeficit: 592000000000, exportGrowth: "7.8%", chinaTradeVolume: 690600000000 }
-              },
-              {
-                  title: "Corporate Performance",
-                  content: "S&P 500 earnings grew by 8.2%. Corporate tax revenue increased by 15%. Business investment up 6.7%.",
-                  stats: { earningsGrowth: "8.2%", taxRevenueIncrease: "15%", businessInvestment: "6.7%" }
-              },
-              {
-                  title: "Housing Market",
-                  content: "Median home price reached $428,700. New housing starts increased by 4.5%. Mortgage rates averaged 6.8%.",
-                  stats: { medianHomePrice: 428700, housingStarts: "4.5%", mortgageRate: "6.8%" }
-              }
-          ]
-      },
-      {
-          title: "Social Factors",
-          items: [
-              {
-                  title: "Demographic Shifts",
-                  content: "Population reached 335 million. Median age increased to 38.9 years. Hispanic population grew to 19.1%.",
-                  stats: { totalPopulation: 335000000, medianAge: 38.9, hispanicShare: "19.1%" }
-              },
-              {
-                  title: "Education Trends",
-                  content: "College enrollment declined by 3.2%. Student debt reached $1.75 trillion. STEM graduates increased by 22%.",
-                  stats: { enrollmentChange: "-3.2%", studentDebt: 1750000000000, stemIncrease: "22%" }
-              },
-              {
-                  title: "Healthcare Access",
-                  content: "88.3% have health insurance. Telehealth utilization up 38x. Mental health spending increased by 27%.",
-                  stats: { insuranceCoverage: "88.3%", telehealthGrowth: "38x", mentalHealthSpending: "27%" }
-              },
-              {
-                  title: "Income Inequality",
-                  content: "Gini coefficient at 0.484. Top 1% wealth share at 32.3%. Median household income reached $74,580.",
-                  stats: { giniCoefficient: 0.484, topPercentWealth: "32.3%", medianIncome: 74580 }
-              },
-              {
-                  title: "Urban Development",
-                  content: "83.7% urbanization rate. Smart city initiatives in 156 cities. Public transport ridership up 15.3%.",
-                  stats: { urbanization: "83.7%", smartCities: 156, transitGrowth: "15.3%" }
-              },
-              {
-                  title: "Cultural Trends",
-                  content: "Streaming services reach 85% of households. Social media users increased to 302 million. Digital content consumption up 42%.",
-                  stats: { streamingPenetration: "85%", socialMediaUsers: 302000000, digitalContentGrowth: "42%" }
-              }
-          ]
-      },
-      {
-          title: "Technological Factors",
-          items: [
-              {
-                  title: "Digital Infrastructure",
-                  content: "5G coverage reached 85%. Cloud computing market at $390 billion. Cybersecurity spending at $172.5 billion.",
-                  stats: { fiveGCoverage: "85%", cloudMarket: 390000000000, cybersecuritySpend: 172500000000 }
-              },
-              {
-                  title: "AI and Automation",
-                  content: "AI adoption in enterprises at 35%. Robot density increased by 28%. Machine learning patents up 45%.",
-                  stats: { aiAdoption: "35%", robotDensity: "28%", mlPatents: "45%" }
-              },
-              {
-                  title: "Innovation Metrics",
-                  content: "R&D spending at 3.45% of GDP. Venture capital investments total $238.3 billion. Tech startups increased by 18%.",
-                  stats: { rdSpendingGdp: "3.45%", vcInvestments: 238300000000, startupGrowth: "18%" }
-              },
-              {
-                  title: "Digital Commerce",
-                  content: "E-commerce at 21.2% of retail sales. Digital payments adoption at 82.5%. Cryptocurrency ownership at 16%.",
-                  stats: { ecommerceShare: "21.2%", digitalPayments: "82.5%", cryptoOwnership: "16%" }
-              },
-              {
-                  title: "Quantum Computing",
-                  content: "Federal investment reached $1.2 billion. 45 quantum computing startups founded. Industry partnerships increased by 65%.",
-                  stats: { federalInvestment: 1200000000, startups: 45, partnershipGrowth: "65%" }
-              },
-              {
-                  title: "Biotechnology",
-                  content: "Biotech market reached $497 billion. Gene therapy trials increased by 34%. Research publications up 28%.",
-                  stats: { marketSize: 497000000000, trialIncrease: "34%", publicationGrowth: "28%" }
-              }
-          ]
-      },
-      {
-          title: "Legal Factors",
-          items: [
-              {
-                  title: "Regulatory Environment",
-                  content: "2,847 new federal regulations. Compliance costs up 12.4%. Environmental regulations strengthened in 23 states.",
-                  stats: { newRegulations: 2847, complianceCostIncrease: "12.4%", statesWithNewEnvLaws: 23 }
-              },
-              {
-                  title: "Corporate Governance",
-                  content: "ESG reporting mandatory for 63% of public companies. Board diversity requirements in 12 states. Shareholder activism up 34%.",
-                  stats: { esgMandateShare: "63%", statesWithDiversityLaws: 12, activismIncrease: "34%" }
-              },
-              {
-                  title: "Data Privacy",
-                  content: "State privacy laws enacted in 15 states. GDPR compliance costs reached $8.4 billion. Data breaches increased by 17%.",
-                  stats: { statesWithPrivacyLaws: 15, complianceCosts: 8400000000, breachIncrease: "17%" }
-              },
-              {
-                  title: "Intellectual Property",
-                  content: "Patent applications up 12.3%. IP litigation increased by 8.7%. International patent treaties expanded to 185 countries.",
-                  stats: { patentGrowth: "12.3%", litigationIncrease: "8.7%", treatyCountries: 185 }
-              },
-              {
-                  title: "Employment Law",
-                  content: "Minimum wage increased in 22 states. Worker classification laws affected 8.3 million. Workplace safety regulations expanded 15%.",
-                  stats: { statesWithIncrease: 22, workersAffected: 8300000, safetyExpansion: "15%" }
-              },
-              {
-                  title: "Antitrust Enforcement",
-                  content: "Major tech investigations increased by 45%. Merger reviews up 28%. Competition law fines reached $12.3 billion.",
-                  stats: { investigationIncrease: "45%", mergerReviewGrowth: "28%", finesTotal: 12300000000 }
-              }
-          ]
-      },
-      {
-          title: "Environmental Factors",
-          items: [
-              {
-                  title: "Clean Energy Transition",
-                  content: "Renewable energy at 21.5% of generation. EV sales at 1.2 million units. Solar installation up 43%.",
-                  stats: { renewableShare: "21.5%", evSales: 1200000, solarGrowth: "43%" }
-              },
-              {
-                  title: "Climate Impact",
-                  content: "Carbon emissions down 15% since 2005. 30 states adopted climate plans. Green jobs up 3.5% annually.",
-                  stats: { emissionsReduction: "15%", statesWithPlans: 30, jobsGrowth: "3.5%" }
-              },
-              {
-                  title: "Resource Management",
-                  content: "Water stress affects 40% of states. Recycling rate at 32.1%. Renewable water resources down 2.3% annually.",
-                  stats: { waterStressedStates: "40%", recyclingRate: "32.1%", waterDepletion: "2.3%" }
-              },
-              {
-                  title: "Biodiversity Conservation",
-                  content: "Protected areas increased by 5.2%. Endangered species recovery projects up 28%. Wildlife corridors expanded by 15%.",
-                  stats: { protectedAreaGrowth: "5.2%", recoveryProjects: "28%", corridorExpansion: "15%" }
-              },
-              {
-                  title: "Waste Management",
-                  content: "Landfill diversion rate reached 35%. Plastic recycling increased to 9%. Hazardous waste decreased by 12%.",
-                  stats: { diversionRate: "35%", plasticRecycling: "9%", wasteReduction: "12%" }
-              },
-              {
-                  title: "Air Quality",
-                  content: "PM2.5 levels decreased by 8%. Clean Air Act compliance reached 92%. Zero-emission zones established in 28 cities.",
-                  stats: { pm25Reduction: "8%", compliance: "92%", zeroEmissionZones: 28 }
-              }
-          ]
-      }
-  ]
+    title: "Artificial Intelligence Impact Analysis - USA Business Environment",
+    subtitle: "Technological-Resource Factor Analysis 2021-2024",
+    sections: [
+        {
+            title: "Current AI Integration Status",
+            items: [
+                {
+                    title: "Enterprise AI Adoption",
+                    content: "35% of US enterprises have implemented AI solutions across core business processes. Healthcare leads adoption at 42%, followed by financial services at 39%. Small businesses show 15% adoption rate.",
+                    stats: { enterpriseAdoption: "35%", healthcareAdoption: "42%", smallBusinessAdoption: "15%" }
+                },
+                {
+                    title: "AI Investment Scale",
+                    content: "US private AI investment reached $124 billion in 2023. Federal AI research funding increased to $2.7 billion. Defense-related AI spending at $15.8 billion annually.",
+                    stats: { privateInvestment: 124000000000, federalFunding: 2700000000, defenseSpending: 15800000000 }
+                },
+                {
+                    title: "Workforce Impact",
+                    content: "12.3 million jobs affected by AI integration. 2.1 million new AI-related positions created. 45% of companies report skills gap in AI expertise.",
+                    stats: { jobsAffected: 12300000, newPositions: 2100000, skillsGap: "45%" }
+                },
+                {
+                    title: "Economic Contribution",
+                    content: "AI technologies contributed $1.1 trillion to US GDP. Productivity gains from AI implementation averaged 15.4%. Cost savings through AI automation reached 23%.",
+                    stats: { gdpContribution: 1100000000000, productivityGain: "15.4%", costSavings: "23%" }
+                },
+                {
+                    title: "Research & Development",
+                    content: "7,852 AI patents filed in 2023. University AI research programs increased by 156%. Corporate AI labs grew by 89%.",
+                    stats: { patents: 7852, universityPrograms: "156%", corporateLabs: "89%" }
+                },
+                {
+                    title: "Infrastructure Development",
+                    content: "Cloud AI computing capacity increased by 245%. AI-specific data centers grew by 67%. Edge AI computing adoption up 112%.",
+                    stats: { computingGrowth: "245%", dataCenterGrowth: "67%", edgeAdoption: "112%" }
+                }
+            ]
+        },
+        {
+            title: "Business Environment Impact",
+            items: [
+                {
+                    title: "Competitive Landscape",
+                    content: "78% of Fortune 500 companies using AI for competitive advantage. Market concentration in AI services increased by 34%. New AI startups grew by 156%.",
+                    stats: { fortuneAdoption: "78%", marketConcentration: "34%", startupGrowth: "156%" }
+                },
+                {
+                    title: "Industry Transformation",
+                    content: "15 major industries significantly disrupted by AI. Average industry productivity increase of 18.7%. Digital transformation accelerated by 3.2 years.",
+                    stats: { industriesDisrupted: 15, productivityIncrease: "18.7%", transformationAcceleration: 3.2 }
+                },
+                {
+                    title: "Resource Allocation",
+                    content: "42% of IT budgets allocated to AI initiatives. Human resource reallocation affected 23% of workforce. Training investment increased by 89%.",
+                    stats: { itBudget: "42%", workforceReallocation: "23%", trainingIncrease: "89%" }
+                },
+                {
+                    title: "Market Structure",
+                    content: "AI services market grew to $62 billion. Cross-industry AI applications increased by 145%. Specialized AI solutions market up 234%.",
+                    stats: { marketSize: 62000000000, crossIndustryGrowth: "145%", specializedGrowth: "234%" }
+                },
+                {
+                    title: "Innovation Dynamics",
+                    content: "AI-driven innovation increased R&D efficiency by 34%. New product development cycles reduced by 45%. Innovation success rate up 28%.",
+                    stats: { rdEfficiency: "34%", developmentReduction: "45%", successRate: "28%" }
+                },
+                {
+                    title: "Strategic Adaptation",
+                    content: "89% of businesses revised strategies for AI integration. Strategic partnerships increased by 167%. Technology investment horizons extended by 2.8 years.",
+                    stats: { strategyRevision: "89%", partnershipGrowth: "167%", investmentHorizon: 2.8 }
+                }
+            ]
+        }
+    ]
 },
 mexico: {
   title: "Mexican Market Analysis",
