@@ -274,149 +274,220 @@ export class AppComponent {
         }
     ]
 },
-us : {
+usa: {
   title: "United States Market Analysis",
-  subtitle: "Current Trends and Future Outlook",
+  subtitle: "Comprehensive Market Trends Analysis 2021-2024",
   sections: [
-    {
-      title: "Political Factors",
-      items: [
-        {
-          title: "Government Efficiency & Bureaucracy Reduction",
-          content:
-            "Proposed 'Department of Government Efficiency' aims to cut $2 trillion in federal spending. Plans to fire 75% of the federal workforce (2 million employees).",
-          stats: {
-            plannedCuts: "$2T",
-            workforceReduction: "75%"
-          }
-        },
-        {
-          title: "Trade War 2.0",
-          content:
-            "Proposed tariffs of 60% on Chinese goods, and 200% if China threatens Taiwan. Past effects include a 50% drop in exports and 300,000 job losses in agriculture & manufacturing.",
-          stats: {
-            baseTariff: "60%",
-            escalatedTariff: "200%",
-            jobLosses: 300000
-          }
-        }
-      ]
-    },
-    {
-      title: "Economic Factors",
-      items: [
-        {
-          title: "Post-Election Financial Market Boom",
-          content:
-            "Stock market surge post-election: JP Morgan +11.5%, Bitcoin reached $76,480, Tesla +18%, Google +6.5%. Meanwhile, renewable energy stocks declined (e.g., First Solar -10.1%, Enphase Energy -16.8%).",
-          stats: {
-            jpMorganGain: "11.5%",
-            bitcoinPrice: 76480,
-            teslaGain: "18%"
-          }
-        },
-        {
-          title: "Frozen Housing Market",
-          content:
-            "30-year mortgage rates surged from 2.65% (2021) to 7.8% (Oct 2023), with the lowest home turnover rate in 30 years – only 2.5% of homes sold in 2024.",
-          stats: {
-            mortgageRate2021: "2.65%",
-            mortgageRate2023: "7.8%",
-            turnoverRate: "2.5%"
-          }
-        }
-      ]
-    },
-    {
-      title: "Social Factors",
-      items: [
-        {
-          title: "Polarized Social Climate",
-          content:
-            "A 25% increase in politically charged social media posts and urban protests. Additionally, 60% of citizens report feeling disconnected from national leadership.",
-          stats: {
-            socialPolarizationIncrease: "25%",
-            disconnectionPercentage: "60%"
-          }
-        },
-        {
-          title: "Healthcare and Education Concerns",
-          content:
-            "Healthcare costs have risen by 20% over the past five years, and student loan debt reached $1.7 trillion in 2023, affecting family stability and social mobility.",
-          stats: {
-            healthcareCostIncrease: "20%",
-            studentLoanDebt: "$1.7T"
-          }
-        }
-      ]
-    },
-    {
-      title: "Technological Factors",
-      items: [
-        {
-          title: "Silicon Valley Innovation Surge",
-          content:
-            "Tech startups increased by 35% post-pandemic, with AI investments up by 50%, spurring breakthroughs in machine learning and robotics.",
-          stats: {
-            startupGrowth: "35%",
-            AIInvestmentGrowth: "50%"
-          }
-        },
-        {
-          title: "Cybersecurity Challenges",
-          content:
-            "Cyberattacks increased by 40% in 2023, prompting a federal cybersecurity initiative with a budget of $15 billion.",
-          stats: {
-            cyberAttackIncrease: "40%",
-            cyberBudget: "$15B"
-          }
-        }
-      ]
-    },
-    {
-      title: "Legal Factors",
-      items: [
-        {
-          title: "Antitrust Regulations in Tech",
-          content:
-            "New antitrust actions have spurred proposals to break up major tech conglomerates, with a potential $500 billion valuation impact on the market.",
-          stats: {
-            valuationImpact: "$500B"
-          }
-        },
-        {
-          title: "Strengthened Data Privacy Laws",
-          content:
-            "Federal law now mandates strict data privacy standards, with fines of up to $50 million for breaches.",
-          stats: {
-            maxFine: "$50M"
-          }
-        }
-      ]
-    },
-    {
-      title: "Environmental Factors",
-      items: [
-        {
-          title: "Accelerated Renewable Energy Adoption",
-          content:
-            "Renewable energy now accounts for 35% of total power generation in 2023, with solar installations increasing by 45%.",
-          stats: {
-            renewableShare: "35%",
-            solarGrowth: "45%"
-          }
-        },
-        {
-          title: "Environmental Regulations Tightened",
-          content:
-            "Stricter emissions regulations led to a 25% reduction in industrial CO2 output in 2023, alongside green infrastructure investments reaching $100 billion.",
-          stats: {
-            emissionReduction: "25%",
-            greenInvestment: "$100B"
-          }
-        }
-      ]
-    }
+      {
+          title: "Political Factors",
+          items: [
+              {
+                  title: "Electoral System Changes",
+                  content: "Implementation of new voting laws in 27 states (2021-2023). Mail-in voting increased by 43% in 2022 midterms. Voter turnout reached 66.8% in 2020 presidential election.",
+                  stats: { statesWithNewLaws: 27, mailInVotingIncrease: "43%", voterTurnout: "66.8%" }
+              },
+              {
+                  title: "Federal Spending Patterns",
+                  content: "Infrastructure Investment and Jobs Act allocated $1.2 trillion over 8 years. Defense budget increased to $886 billion for FY2024. Federal deficit projected at $1.6 trillion.",
+                  stats: { infrastructureBudget: 1200000000000, defenseBudget: 886000000000, federalDeficit: 1600000000000 }
+              },
+              {
+                  title: "State-Federal Relations",
+                  content: "37 states filed lawsuits against federal government (2022-2023). Interstate compacts increased by 22%, with 47 states participating in cross-border agreements.",
+                  stats: { stateLawsuits: 37, compactIncrease: "22%", participatingStates: 47 }
+              },
+              {
+                  title: "Campaign Finance Reform",
+                  content: "Small-dollar donations increased by 56%. Corporate PAC contributions decreased by 23%. Average campaign cost increased to $21.3 million per Senate race.",
+                  stats: { smallDonationIncrease: "56%", pacDecrease: "23%", averageCampaignCost: 21300000 }
+              },
+              {
+                  title: "Legislative Productivity",
+                  content: "Congress passed 352 bills in 2023. Bipartisan support achieved on 42% of legislation. Committee hearings increased by 28%.",
+                  stats: { billsPassed: 352, bipartisanSupport: "42%", hearingIncrease: "28%" }
+              },
+              {
+                  title: "International Relations",
+                  content: "New trade agreements with 5 nations. Foreign aid budget increased by 12%. Diplomatic missions expanded in 15 countries.",
+                  stats: { newTradeAgreements: 5, foreignAidIncrease: "12%", diplomaticExpansion: 15 }
+              }
+          ]
+      },
+      {
+          title: "Economic Factors",
+          items: [
+              {
+                  title: "GDP Growth and Composition",
+                  content: "GDP reached $25.5 trillion. Services sector contributes 77.6%. Manufacturing sector grew by 3.2% annually since 2021.",
+                  stats: { gdpTotal: 25500000000000, servicesShare: "77.6%", manufacturingGrowth: "3.2%" }
+              },
+              {
+                  title: "Labor Market Dynamics",
+                  content: "Employment rate at 96.2%. Remote work adoption at 32.6%. Gig economy workers increased to 57.3 million.",
+                  stats: { employmentRate: "96.2%", remoteWork: "32.6%", gigWorkers: 57300000 }
+              },
+              {
+                  title: "Monetary Policy",
+                  content: "Federal funds rate at 5.25%. Inflation rate decreased to 3.1%. M2 money supply grew by 2.8%.",
+                  stats: { fedRate: "5.25%", inflationRate: "3.1%", m2Growth: "2.8%" }
+              },
+              {
+                  title: "International Trade",
+                  content: "Trade deficit at $592 billion. Exports increased by 7.8%. China trade relationship valued at $690.6 billion.",
+                  stats: { tradeDeficit: 592000000000, exportGrowth: "7.8%", chinaTradeVolume: 690600000000 }
+              },
+              {
+                  title: "Corporate Performance",
+                  content: "S&P 500 earnings grew by 8.2%. Corporate tax revenue increased by 15%. Business investment up 6.7%.",
+                  stats: { earningsGrowth: "8.2%", taxRevenueIncrease: "15%", businessInvestment: "6.7%" }
+              },
+              {
+                  title: "Housing Market",
+                  content: "Median home price reached $428,700. New housing starts increased by 4.5%. Mortgage rates averaged 6.8%.",
+                  stats: { medianHomePrice: 428700, housingStarts: "4.5%", mortgageRate: "6.8%" }
+              }
+          ]
+      },
+      {
+          title: "Social Factors",
+          items: [
+              {
+                  title: "Demographic Shifts",
+                  content: "Population reached 335 million. Median age increased to 38.9 years. Hispanic population grew to 19.1%.",
+                  stats: { totalPopulation: 335000000, medianAge: 38.9, hispanicShare: "19.1%" }
+              },
+              {
+                  title: "Education Trends",
+                  content: "College enrollment declined by 3.2%. Student debt reached $1.75 trillion. STEM graduates increased by 22%.",
+                  stats: { enrollmentChange: "-3.2%", studentDebt: 1750000000000, stemIncrease: "22%" }
+              },
+              {
+                  title: "Healthcare Access",
+                  content: "88.3% have health insurance. Telehealth utilization up 38x. Mental health spending increased by 27%.",
+                  stats: { insuranceCoverage: "88.3%", telehealthGrowth: "38x", mentalHealthSpending: "27%" }
+              },
+              {
+                  title: "Income Inequality",
+                  content: "Gini coefficient at 0.484. Top 1% wealth share at 32.3%. Median household income reached $74,580.",
+                  stats: { giniCoefficient: 0.484, topPercentWealth: "32.3%", medianIncome: 74580 }
+              },
+              {
+                  title: "Urban Development",
+                  content: "83.7% urbanization rate. Smart city initiatives in 156 cities. Public transport ridership up 15.3%.",
+                  stats: { urbanization: "83.7%", smartCities: 156, transitGrowth: "15.3%" }
+              },
+              {
+                  title: "Cultural Trends",
+                  content: "Streaming services reach 85% of households. Social media users increased to 302 million. Digital content consumption up 42%.",
+                  stats: { streamingPenetration: "85%", socialMediaUsers: 302000000, digitalContentGrowth: "42%" }
+              }
+          ]
+      },
+      {
+          title: "Technological Factors",
+          items: [
+              {
+                  title: "Digital Infrastructure",
+                  content: "5G coverage reached 85%. Cloud computing market at $390 billion. Cybersecurity spending at $172.5 billion.",
+                  stats: { fiveGCoverage: "85%", cloudMarket: 390000000000, cybersecuritySpend: 172500000000 }
+              },
+              {
+                  title: "AI and Automation",
+                  content: "AI adoption in enterprises at 35%. Robot density increased by 28%. Machine learning patents up 45%.",
+                  stats: { aiAdoption: "35%", robotDensity: "28%", mlPatents: "45%" }
+              },
+              {
+                  title: "Innovation Metrics",
+                  content: "R&D spending at 3.45% of GDP. Venture capital investments total $238.3 billion. Tech startups increased by 18%.",
+                  stats: { rdSpendingGdp: "3.45%", vcInvestments: 238300000000, startupGrowth: "18%" }
+              },
+              {
+                  title: "Digital Commerce",
+                  content: "E-commerce at 21.2% of retail sales. Digital payments adoption at 82.5%. Cryptocurrency ownership at 16%.",
+                  stats: { ecommerceShare: "21.2%", digitalPayments: "82.5%", cryptoOwnership: "16%" }
+              },
+              {
+                  title: "Quantum Computing",
+                  content: "Federal investment reached $1.2 billion. 45 quantum computing startups founded. Industry partnerships increased by 65%.",
+                  stats: { federalInvestment: 1200000000, startups: 45, partnershipGrowth: "65%" }
+              },
+              {
+                  title: "Biotechnology",
+                  content: "Biotech market reached $497 billion. Gene therapy trials increased by 34%. Research publications up 28%.",
+                  stats: { marketSize: 497000000000, trialIncrease: "34%", publicationGrowth: "28%" }
+              }
+          ]
+      },
+      {
+          title: "Legal Factors",
+          items: [
+              {
+                  title: "Regulatory Environment",
+                  content: "2,847 new federal regulations. Compliance costs up 12.4%. Environmental regulations strengthened in 23 states.",
+                  stats: { newRegulations: 2847, complianceCostIncrease: "12.4%", statesWithNewEnvLaws: 23 }
+              },
+              {
+                  title: "Corporate Governance",
+                  content: "ESG reporting mandatory for 63% of public companies. Board diversity requirements in 12 states. Shareholder activism up 34%.",
+                  stats: { esgMandateShare: "63%", statesWithDiversityLaws: 12, activismIncrease: "34%" }
+              },
+              {
+                  title: "Data Privacy",
+                  content: "State privacy laws enacted in 15 states. GDPR compliance costs reached $8.4 billion. Data breaches increased by 17%.",
+                  stats: { statesWithPrivacyLaws: 15, complianceCosts: 8400000000, breachIncrease: "17%" }
+              },
+              {
+                  title: "Intellectual Property",
+                  content: "Patent applications up 12.3%. IP litigation increased by 8.7%. International patent treaties expanded to 185 countries.",
+                  stats: { patentGrowth: "12.3%", litigationIncrease: "8.7%", treatyCountries: 185 }
+              },
+              {
+                  title: "Employment Law",
+                  content: "Minimum wage increased in 22 states. Worker classification laws affected 8.3 million. Workplace safety regulations expanded 15%.",
+                  stats: { statesWithIncrease: 22, workersAffected: 8300000, safetyExpansion: "15%" }
+              },
+              {
+                  title: "Antitrust Enforcement",
+                  content: "Major tech investigations increased by 45%. Merger reviews up 28%. Competition law fines reached $12.3 billion.",
+                  stats: { investigationIncrease: "45%", mergerReviewGrowth: "28%", finesTotal: 12300000000 }
+              }
+          ]
+      },
+      {
+          title: "Environmental Factors",
+          items: [
+              {
+                  title: "Clean Energy Transition",
+                  content: "Renewable energy at 21.5% of generation. EV sales at 1.2 million units. Solar installation up 43%.",
+                  stats: { renewableShare: "21.5%", evSales: 1200000, solarGrowth: "43%" }
+              },
+              {
+                  title: "Climate Impact",
+                  content: "Carbon emissions down 15% since 2005. 30 states adopted climate plans. Green jobs up 3.5% annually.",
+                  stats: { emissionsReduction: "15%", statesWithPlans: 30, jobsGrowth: "3.5%" }
+              },
+              {
+                  title: "Resource Management",
+                  content: "Water stress affects 40% of states. Recycling rate at 32.1%. Renewable water resources down 2.3% annually.",
+                  stats: { waterStressedStates: "40%", recyclingRate: "32.1%", waterDepletion: "2.3%" }
+              },
+              {
+                  title: "Biodiversity Conservation",
+                  content: "Protected areas increased by 5.2%. Endangered species recovery projects up 28%. Wildlife corridors expanded by 15%.",
+                  stats: { protectedAreaGrowth: "5.2%", recoveryProjects: "28%", corridorExpansion: "15%" }
+              },
+              {
+                  title: "Waste Management",
+                  content: "Landfill diversion rate reached 35%. Plastic recycling increased to 9%. Hazardous waste decreased by 12%.",
+                  stats: { diversionRate: "35%", plasticRecycling: "9%", wasteReduction: "12%" }
+              },
+              {
+                  title: "Air Quality",
+                  content: "PM2.5 levels decreased by 8%. Clean Air Act compliance reached 92%. Zero-emission zones established in 28 cities.",
+                  stats: { pm25Reduction: "8%", compliance: "92%", zeroEmissionZones: 28 }
+              }
+          ]
+      }
   ]
 },
 mexico: {
@@ -564,39 +635,91 @@ mexico: {
   ]
 }
 } ;
-  showRegion(region: any) {
-    const content = this.regionData[region];
-    const container: any = document.getElementById('contentContainer');
-    const regionContent:any = document.getElementById('regionContent');
-    
-    regionContent.classList.remove('hidden');
-    
-    let html = `
-        <h2 class="text-3xl font-bold text-blue-900 mb-8">${content.title}</h2>
-        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
-    `;
-    
-    content.sections.forEach((section: any) => {
-        html += `
-            <div class="factor-section bg-white rounded-lg shadow-lg p-6">
-                <h3 class="text-xl font-bold text-blue-900 mb-4">${section.title}</h3>
-                <div class="space-y-4">
-                    ${section.items.map((item: any) => `
-                        <div>
-                            <h4 class="font-semibold text-blue-800">${item.title}</h4>
-                            <p class="text-gray-600">${item.content}</p>
-                        </div>
-                    `).join('')}
-                </div>
-            </div>
-        `;
-    });
-    
-    html += '</div>';
-    
-    container.innerHTML = html;
-    regionContent.scrollIntoView({ behavior: 'smooth' });
-  }
+showRegion(region: any) {
+  const content = this.regionData[region];
+  const container: any = document.getElementById('contentContainer');
+  const regionContent: any = document.getElementById('regionContent');
+  
+  regionContent.classList.remove('hidden');
+  
+  let html = `
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <header class="text-center mb-12">
+              <h2 class="text-3xl font-bold text-gray-900 mb-2">${content.title}</h2>
+              <p class="text-lg text-gray-600">${content.subtitle}</p>
+          </header>
+          
+          <div class="grid grid-cols-1 gap-8">
+  `;
+  
+  content.sections.forEach((section: any) => {
+      html += `
+          <section class="bg-white rounded-xl shadow-lg overflow-hidden">
+              <div class="px-6 py-4 bg-gray-50 border-b border-gray-200">
+                  <h3 class="text-xl font-semibold text-gray-900">${section.title}</h3>
+              </div>
+              <div class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      `;
+      
+      section.items.forEach((item: any) => {
+          html += `
+              <div class="bg-gray-50 rounded-lg p-5 hover:shadow-md transition-shadow">
+                  <h4 class="text-lg font-semibold text-gray-900 mb-3">${item.title}</h4>
+                  <p class="text-gray-600 mb-4">${item.content}</p>
+                  
+                  <div class="border-t border-gray-200 pt-4">
+                      <div class="grid grid-cols-2 gap-4">
+          `;
+          
+          // Add statistics with formatted values
+          Object.entries(item.stats).forEach(([key, value]) => {
+              const formattedKey = key
+                  .replace(/([A-Z])/g, ' $1') // Add spaces before capital letters
+                  .replace(/([0-9])/g, ' $1') // Add spaces before numbers
+                  .toLowerCase()
+                  .split(' ')
+                  .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                  .join(' ');
+
+              let displayValue = value;
+              // Format large numbers with commas and abbreviations
+              if (typeof value === 'number' && value >= 1000000000) {
+                  displayValue = `$${(value / 1000000000).toFixed(1)}B`;
+              } else if (typeof value === 'number' && value >= 1000000) {
+                  displayValue = `$${(value / 1000000).toFixed(1)}M`;
+              } else if (typeof value === 'number' && value >= 1000) {
+                  displayValue = value.toLocaleString();
+              }
+
+              html += `
+                  <div class="text-sm">
+                      <span class="text-gray-500">${formattedKey}:</span>
+                      <span class="text-gray-900 font-medium ml-1">${displayValue}</span>
+                  </div>
+              `;
+          });
+          
+          html += `
+                      </div>
+                  </div>
+              </div>
+          `;
+      });
+      
+      html += `
+              </div>
+          </section>
+      `;
+  });
+  
+  html += `
+          </div>
+      </div>
+  `;
+  
+  container.innerHTML = html;
+  regionContent.scrollIntoView({ behavior: 'smooth' });
+}
 
   toggleMobileMenu() {
       const menu:any = document.getElementById('mobileMenu');
